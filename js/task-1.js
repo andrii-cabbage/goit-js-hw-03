@@ -1,9 +1,10 @@
 function slugify(title) {
-    title = title.toLowerCase();
     
-    title = title.replace(/\s+/g, '-');
+    const words = title.toLowerCase().split(' ');
     
-    return title;
+    const slug = words.join('-');
+    
+    return slug;
 }
 
 
